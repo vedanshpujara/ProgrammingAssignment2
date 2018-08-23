@@ -25,7 +25,6 @@ if(!is.null(inv)){
 message("getting cached result")
 return(inv)
 }
-## Return a matrix that is the inverse of 'x'
 data<-x$get()
 inv<-solve(data, ...)
 x$setinv(inv)
